@@ -15,6 +15,13 @@ import eventAlerts from "./utils/notifications/alerts";
 import eventToasts from "./utils/notifications/toasts";
 import eventRead from "./utils/notifications/read";
 
+import * as mdb from 'mdb-ui-kit'; // lib
+window.mdb = mdb;
+
+import { Dropdown, Collapse, initMDB } from "mdb-ui-kit";
+
+initMDB({ Dropdown, Collapse });
+
 dayjs.extend(advancedFormat);
 CTFd.init(window.init);
 
